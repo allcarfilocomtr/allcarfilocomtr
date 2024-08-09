@@ -1,0 +1,3 @@
+User-agent: *
+  Disallow:
+  Sitemap: https://allcarfilo.com.tr/map.xml
