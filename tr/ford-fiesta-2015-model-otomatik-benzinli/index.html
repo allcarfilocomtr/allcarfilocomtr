@@ -37,13 +37,13 @@
   </head>
 
   <body>
-    <div id="header"><div class="pop4f">
-  <div class="pop4ftitle">
-    <div class="pop4ftitlebody">
-      <div class="pop4ftitlebodytitle">
+    <div id="header"><div class="ampd2">
+  <div class="ampd2title">
+    <div class="ampd2titlebody">
+      <div class="ampd2titlebodytitle">
         All Car Filo Gaziantep Web Sitemize Hoşgeldiniz
       </div>
-      <div class="pop4ftitlebodylang">
+      <div class="ampd2titlebodylang">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
         </ul>
@@ -51,25 +51,176 @@
     </div>
   </div>
 
-  <div class="pop4fbody">
-    <a href="/tr"><img src="/img/logo.svg" class="pop4fbodylogo" /></a>
+  <div class="ampd2body">
+    <a href="/tr"><img src="/img/logo.svg" class="module-logo" /></a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined ampd2-icon">phone</div>
+     <div>
+      <div  class="ampd2-title">Bizi hemen arayın</div>
+      <div  class="ampd2-spot">+90 532 166 80 27</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined ampd2-icon">mail</div>
+     <div>
+      <div  class="ampd2-title">Bize yazın</div>
+      <div  class="ampd2-spot">allcarfilo@hotmail.com</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined ampd2-icon">location_on</div>
+     <div>
+      <div  class="ampd2-title">Kolejtepe mah. ordu cad. baydar apt. </div>
+      <div  class="ampd2-spot">No: 13 c iç kapı no: z1 Şahinbey/ Gaziantep</div>
+     </div>
+    </a>
+    
   </div>
 
-  <div class="pop4fmenubody">
-    <div class="pop4fmenu">
-      <div class="pop4fmenulistbody">
-        <div class="pop4fmenulist">
-          <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/araclarimiz/">Araçlarımız</a><a href="/tr/iletisim/">İletişim</a>
-          </ul>
-        </div>
+  <div class="ampd2menubody">
+    <div class="ampd2menu">
+      <div class="ampd2menulistbody">
+        <div class="ampd2menulist"><a class="ampd2menulist-menu" href="/tr/">Anasayfa </a><div class="ampd2menulist-menu" >
+    
+      <a href="/tr/kurumsal/">
+       Kurumsal
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="ampd2menulist-menu" >
+    
+      <a href="/tr/araclarimiz/">
+       Araçlarımız
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="ampd2menulist-menu" >
+    
+      <a href="/tr/iletisim/">
+       İletişim
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .pop4f {
+  .ampd2menulist-menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ampd2menulist-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff !important;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .ampd2menulist-menu:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .ampd2menulist-menu:hover > a {
+    color: #000 !important;
+    /* Change text color to black on hover */
+  }
+
+  .ampd2menulist-menu > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    /* background-color: #f90; */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .dropdown-content > a {
+    width: inherit;
+    padding: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .dropdown-content > a:hover {
+    background-color: #000;
+  }
+
+  .module-logo {
+    width: 300px;
+  }
+
+  .ampd2body {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .ampd2body > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    gap: 10px;
+  }
+
+  .ampd2-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: --titlecolor--;
+  }
+
+  .ampd2-spot {
+    font-size: 16px;
+    color: --spotcolor--;
+  }
+
+  .ampd2-icon {
+    font-size: 36px !important;
+    color: --iconcolor--;
+  }
+
+  .ampd2 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,7 +228,7 @@
     justify-content: center;
   }
 
-  .pop4ftitle {
+  .ampd2title {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -85,7 +236,7 @@
     justify-content: center;
   }
 
-  .pop4ftitlebody {
+  .ampd2titlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -93,39 +244,37 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .pop4ftitlebodytitle {
+  .ampd2titlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .pop4ftitlebodylang {
+  .ampd2titlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .pop4ftitlebodylang ul {
+  .ampd2titlebodylang ul {
     display: flex;
     gap: 5px;
+    position: relative;
   }
 
-  .pop4fbody {
-    width: var(--max);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0px 5px 0px;
+  .ampd2titlebodylang li {
+    position: relative;
+    list-style: none;
   }
 
-  .pop4fmenu {
+  .ampd2menu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .pop4fmenulist {
+  .ampd2menulist {
     width: calc(100% - 20px);
     background-color: #000;
     padding: 10px;
@@ -133,7 +282,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .pop4fmenubody {
+  .ampd2menubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -141,69 +290,131 @@
     justify-content: center;
   }
 
-  .pop4fmenulist ul {
+  .ampd2menulist {
     width: 100%;
-    list-style-type: none;
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
-    overflow-x: auto;
-  }
-
-  .pop4fmenulist ul a {
     padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* overflow-x: auto; */
+  }
+
+  .ampd2menulistbody {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .pop4fmenulist ul a:hover {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-  }
-
-  .pop4fmenulistbody {
-    width: 100%;
-  }
-
-  .pop4fbodylogo {
-    height: 100px;
-    max-width: 90vw;
-    max-height: 100px;
   }
 
   @media screen and (max-width: 1024px) {
-    .pop4fmenu {
+    .ampd2menu {
       overflow-x: auto;
     }
 
-    .pop4fmenulist ul {
+    .ampd2menulist {
       flex-direction: row;
     }
 
-    .pop4fbodylogo {
-      height: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .module-logo {
+      width: 200px;
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    .pop4fmenulist ul a {
-      font-size: 14px;
+    .ampd2body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 </style>
 </div>
-    <div id="content">{{body}}</div>
+    <div id="content"><div class="nch5w-title f36">
+  <span>Ford Fiesta 2015 Model Otomatik Benzinli</span>
+</div>
+
+<div class="nch5w">
+  <div class="nch5w-body"></div>
+  <div class="nch5w-img">
+    <img src="/page/19/nrs35.png" width="100%" />
+  </div>
+</div>
+
+<style>
+  .nch5w-title {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .nch5w-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/page/19/{{bgimg}}');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .nch5w-title span {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+  }
+
+  .nch5w {
+    width: var(--max);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .nch5w-body {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nch5w-img {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .nch5w {
+      flex-direction: column;
+      width: calc(100% - 10px);
+      padding: 5px;
+      gap: 20px;
+    }
+
+    .nch5w-img {
+      width: 100%;
+    }
+
+    .nch5w-body {
+      width: 100%;
+    }
+  }
+
+  #content {
+    justify-content: flex-start;
+  }
+</style>
+</div>
     <div id="footer"><footer class="footer">
   <div class="waves">
     <div class="wave" id="wave1"></div>

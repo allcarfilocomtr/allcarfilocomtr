@@ -37,13 +37,13 @@
   </head>
 
   <body>
-    <div id="header"><div class="lrwo5">
-  <div class="lrwo5title">
-    <div class="lrwo5titlebody">
-      <div class="lrwo5titlebodytitle">
+    <div id="header"><div class="q6c8e">
+  <div class="q6c8etitle">
+    <div class="q6c8etitlebody">
+      <div class="q6c8etitlebodytitle">
         All Car Filo Gaziantep Web Sitemize Hoşgeldiniz
       </div>
-      <div class="lrwo5titlebodylang">
+      <div class="q6c8etitlebodylang">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
         </ul>
@@ -51,25 +51,176 @@
     </div>
   </div>
 
-  <div class="lrwo5body">
-    <a href="/tr"><img src="/img/logo.svg" class="lrwo5bodylogo" /></a>
+  <div class="q6c8ebody">
+    <a href="/tr"><img src="/img/logo.svg" class="module-logo" /></a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined q6c8e-icon">phone</div>
+     <div>
+      <div  class="q6c8e-title">Bizi hemen arayın</div>
+      <div  class="q6c8e-spot">+90 532 166 80 27</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined q6c8e-icon">mail</div>
+     <div>
+      <div  class="q6c8e-title">Bize yazın</div>
+      <div  class="q6c8e-spot">allcarfilo@hotmail.com</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined q6c8e-icon">location_on</div>
+     <div>
+      <div  class="q6c8e-title">Kolejtepe mah. ordu cad. baydar apt. </div>
+      <div  class="q6c8e-spot">No: 13 c iç kapı no: z1 Şahinbey/ Gaziantep</div>
+     </div>
+    </a>
+    
   </div>
 
-  <div class="lrwo5menubody">
-    <div class="lrwo5menu">
-      <div class="lrwo5menulistbody">
-        <div class="lrwo5menulist">
-          <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/araclarimiz/">Araçlarımız</a><a href="/tr/iletisim/">İletişim</a>
-          </ul>
-        </div>
+  <div class="q6c8emenubody">
+    <div class="q6c8emenu">
+      <div class="q6c8emenulistbody">
+        <div class="q6c8emenulist"><a class="q6c8emenulist-menu" href="/tr/">Anasayfa </a><div class="q6c8emenulist-menu" >
+    
+      <a href="/tr/kurumsal/">
+       Kurumsal
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="q6c8emenulist-menu" >
+    
+      <a href="/tr/araclarimiz/">
+       Araçlarımız
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="q6c8emenulist-menu" >
+    
+      <a href="/tr/iletisim/">
+       İletişim
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .lrwo5 {
+  .q6c8emenulist-menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .q6c8emenulist-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff !important;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .q6c8emenulist-menu:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .q6c8emenulist-menu:hover > a {
+    color: #000 !important;
+    /* Change text color to black on hover */
+  }
+
+  .q6c8emenulist-menu > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    /* background-color: #f90; */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .dropdown-content > a {
+    width: inherit;
+    padding: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .dropdown-content > a:hover {
+    background-color: #000;
+  }
+
+  .module-logo {
+    width: 300px;
+  }
+
+  .q6c8ebody {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .q6c8ebody > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    gap: 10px;
+  }
+
+  .q6c8e-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: --titlecolor--;
+  }
+
+  .q6c8e-spot {
+    font-size: 16px;
+    color: --spotcolor--;
+  }
+
+  .q6c8e-icon {
+    font-size: 36px !important;
+    color: --iconcolor--;
+  }
+
+  .q6c8e {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,7 +228,7 @@
     justify-content: center;
   }
 
-  .lrwo5title {
+  .q6c8etitle {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -85,7 +236,7 @@
     justify-content: center;
   }
 
-  .lrwo5titlebody {
+  .q6c8etitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -93,39 +244,37 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .lrwo5titlebodytitle {
+  .q6c8etitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .lrwo5titlebodylang {
+  .q6c8etitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .lrwo5titlebodylang ul {
+  .q6c8etitlebodylang ul {
     display: flex;
     gap: 5px;
+    position: relative;
   }
 
-  .lrwo5body {
-    width: var(--max);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0px 5px 0px;
+  .q6c8etitlebodylang li {
+    position: relative;
+    list-style: none;
   }
 
-  .lrwo5menu {
+  .q6c8emenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .lrwo5menulist {
+  .q6c8emenulist {
     width: calc(100% - 20px);
     background-color: #000;
     padding: 10px;
@@ -133,7 +282,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .lrwo5menubody {
+  .q6c8emenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -141,69 +290,131 @@
     justify-content: center;
   }
 
-  .lrwo5menulist ul {
+  .q6c8emenulist {
     width: 100%;
-    list-style-type: none;
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
-    overflow-x: auto;
-  }
-
-  .lrwo5menulist ul a {
     padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* overflow-x: auto; */
+  }
+
+  .q6c8emenulistbody {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .lrwo5menulist ul a:hover {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-  }
-
-  .lrwo5menulistbody {
-    width: 100%;
-  }
-
-  .lrwo5bodylogo {
-    height: 100px;
-    max-width: 90vw;
-    max-height: 100px;
   }
 
   @media screen and (max-width: 1024px) {
-    .lrwo5menu {
+    .q6c8emenu {
       overflow-x: auto;
     }
 
-    .lrwo5menulist ul {
+    .q6c8emenulist {
       flex-direction: row;
     }
 
-    .lrwo5bodylogo {
-      height: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .module-logo {
+      width: 200px;
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    .lrwo5menulist ul a {
-      font-size: 14px;
+    .q6c8ebody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 </style>
 </div>
-    <div id="content">{{body}}</div>
+    <div id="content"><div class="xflbc-title f36">
+  <span>Opel Corsa 2014 Model Manuel Dizel</span>
+</div>
+
+<div class="xflbc">
+  <div class="xflbc-body"></div>
+  <div class="xflbc-img">
+    <img src="/page/14/yozrs.jpg" width="100%" />
+  </div>
+</div>
+
+<style>
+  .xflbc-title {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .xflbc-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/page/14/{{bgimg}}');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .xflbc-title span {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+  }
+
+  .xflbc {
+    width: var(--max);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .xflbc-body {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .xflbc-img {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .xflbc {
+      flex-direction: column;
+      width: calc(100% - 10px);
+      padding: 5px;
+      gap: 20px;
+    }
+
+    .xflbc-img {
+      width: 100%;
+    }
+
+    .xflbc-body {
+      width: 100%;
+    }
+  }
+
+  #content {
+    justify-content: flex-start;
+  }
+</style>
+</div>
     <div id="footer"><footer class="footer">
   <div class="waves">
     <div class="wave" id="wave1"></div>

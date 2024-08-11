@@ -37,13 +37,13 @@
   </head>
 
   <body>
-    <div id="header"><div class="ba2ii">
-  <div class="ba2iititle">
-    <div class="ba2iititlebody">
-      <div class="ba2iititlebodytitle">
+    <div id="header"><div class="j6r9g">
+  <div class="j6r9gtitle">
+    <div class="j6r9gtitlebody">
+      <div class="j6r9gtitlebodytitle">
         All Car Filo Gaziantep Web Sitemize Hoşgeldiniz
       </div>
-      <div class="ba2iititlebodylang">
+      <div class="j6r9gtitlebodylang">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
         </ul>
@@ -51,25 +51,176 @@
     </div>
   </div>
 
-  <div class="ba2iibody">
-    <a href="/tr"><img src="/img/logo.svg" class="ba2iibodylogo" /></a>
+  <div class="j6r9gbody">
+    <a href="/tr"><img src="/img/logo.svg" class="module-logo" /></a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined j6r9g-icon">phone</div>
+     <div>
+      <div  class="j6r9g-title">Bizi hemen arayın</div>
+      <div  class="j6r9g-spot">+90 532 166 80 27</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined j6r9g-icon">mail</div>
+     <div>
+      <div  class="j6r9g-title">Bize yazın</div>
+      <div  class="j6r9g-spot">allcarfilo@hotmail.com</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined j6r9g-icon">location_on</div>
+     <div>
+      <div  class="j6r9g-title">Kolejtepe mah. ordu cad. baydar apt. </div>
+      <div  class="j6r9g-spot">No: 13 c iç kapı no: z1 Şahinbey/ Gaziantep</div>
+     </div>
+    </a>
+    
   </div>
 
-  <div class="ba2iimenubody">
-    <div class="ba2iimenu">
-      <div class="ba2iimenulistbody">
-        <div class="ba2iimenulist">
-          <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/araclarimiz/">Araçlarımız</a><a href="/tr/iletisim/">İletişim</a>
-          </ul>
-        </div>
+  <div class="j6r9gmenubody">
+    <div class="j6r9gmenu">
+      <div class="j6r9gmenulistbody">
+        <div class="j6r9gmenulist"><a class="j6r9gmenulist-menu" href="/tr/">Anasayfa </a><div class="j6r9gmenulist-menu" >
+    
+      <a href="/tr/kurumsal/">
+       Kurumsal
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="j6r9gmenulist-menu" >
+    
+      <a href="/tr/araclarimiz/">
+       Araçlarımız
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="j6r9gmenulist-menu" >
+    
+      <a href="/tr/iletisim/">
+       İletişim
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .ba2ii {
+  .j6r9gmenulist-menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .j6r9gmenulist-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff !important;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .j6r9gmenulist-menu:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .j6r9gmenulist-menu:hover > a {
+    color: #000 !important;
+    /* Change text color to black on hover */
+  }
+
+  .j6r9gmenulist-menu > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    /* background-color: #f90; */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .dropdown-content > a {
+    width: inherit;
+    padding: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .dropdown-content > a:hover {
+    background-color: #000;
+  }
+
+  .module-logo {
+    width: 300px;
+  }
+
+  .j6r9gbody {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .j6r9gbody > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    gap: 10px;
+  }
+
+  .j6r9g-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: --titlecolor--;
+  }
+
+  .j6r9g-spot {
+    font-size: 16px;
+    color: --spotcolor--;
+  }
+
+  .j6r9g-icon {
+    font-size: 36px !important;
+    color: --iconcolor--;
+  }
+
+  .j6r9g {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,7 +228,7 @@
     justify-content: center;
   }
 
-  .ba2iititle {
+  .j6r9gtitle {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -85,7 +236,7 @@
     justify-content: center;
   }
 
-  .ba2iititlebody {
+  .j6r9gtitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -93,39 +244,37 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .ba2iititlebodytitle {
+  .j6r9gtitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .ba2iititlebodylang {
+  .j6r9gtitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .ba2iititlebodylang ul {
+  .j6r9gtitlebodylang ul {
     display: flex;
     gap: 5px;
+    position: relative;
   }
 
-  .ba2iibody {
-    width: var(--max);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0px 5px 0px;
+  .j6r9gtitlebodylang li {
+    position: relative;
+    list-style: none;
   }
 
-  .ba2iimenu {
+  .j6r9gmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .ba2iimenulist {
+  .j6r9gmenulist {
     width: calc(100% - 20px);
     background-color: #000;
     padding: 10px;
@@ -133,7 +282,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .ba2iimenubody {
+  .j6r9gmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -141,69 +290,131 @@
     justify-content: center;
   }
 
-  .ba2iimenulist ul {
+  .j6r9gmenulist {
     width: 100%;
-    list-style-type: none;
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
-    overflow-x: auto;
-  }
-
-  .ba2iimenulist ul a {
     padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* overflow-x: auto; */
+  }
+
+  .j6r9gmenulistbody {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .ba2iimenulist ul a:hover {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-  }
-
-  .ba2iimenulistbody {
-    width: 100%;
-  }
-
-  .ba2iibodylogo {
-    height: 100px;
-    max-width: 90vw;
-    max-height: 100px;
   }
 
   @media screen and (max-width: 1024px) {
-    .ba2iimenu {
+    .j6r9gmenu {
       overflow-x: auto;
     }
 
-    .ba2iimenulist ul {
+    .j6r9gmenulist {
       flex-direction: row;
     }
 
-    .ba2iibodylogo {
-      height: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .module-logo {
+      width: 200px;
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    .ba2iimenulist ul a {
-      font-size: 14px;
+    .j6r9gbody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 </style>
 </div>
-    <div id="content">{{body}}</div>
+    <div id="content"><div class="t5yvs-title f36">
+  <span>Opel Astra J Kasa 2017 Model Manuel Dizel</span>
+</div>
+
+<div class="t5yvs">
+  <div class="t5yvs-body"></div>
+  <div class="t5yvs-img">
+    <img src="/page/11/rqhsx.jpg" width="100%" />
+  </div>
+</div>
+
+<style>
+  .t5yvs-title {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .t5yvs-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/page/11/{{bgimg}}');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .t5yvs-title span {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+  }
+
+  .t5yvs {
+    width: var(--max);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .t5yvs-body {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .t5yvs-img {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .t5yvs {
+      flex-direction: column;
+      width: calc(100% - 10px);
+      padding: 5px;
+      gap: 20px;
+    }
+
+    .t5yvs-img {
+      width: 100%;
+    }
+
+    .t5yvs-body {
+      width: 100%;
+    }
+  }
+
+  #content {
+    justify-content: flex-start;
+  }
+</style>
+</div>
     <div id="footer"><footer class="footer">
   <div class="waves">
     <div class="wave" id="wave1"></div>

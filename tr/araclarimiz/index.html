@@ -37,13 +37,13 @@
   </head>
 
   <body>
-    <div id="header"><div class="c5yji">
-  <div class="c5yjititle">
-    <div class="c5yjititlebody">
-      <div class="c5yjititlebodytitle">
+    <div id="header"><div class="utt3a">
+  <div class="utt3atitle">
+    <div class="utt3atitlebody">
+      <div class="utt3atitlebodytitle">
         All Car Filo Gaziantep Web Sitemize Hoşgeldiniz
       </div>
-      <div class="c5yjititlebodylang">
+      <div class="utt3atitlebodylang">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
         </ul>
@@ -51,25 +51,176 @@
     </div>
   </div>
 
-  <div class="c5yjibody">
-    <a href="/tr"><img src="/img/logo.svg" class="c5yjibodylogo" /></a>
+  <div class="utt3abody">
+    <a href="/tr"><img src="/img/logo.svg" class="module-logo" /></a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined utt3a-icon">phone</div>
+     <div>
+      <div  class="utt3a-title">Bizi hemen arayın</div>
+      <div  class="utt3a-spot">+90 532 166 80 27</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined utt3a-icon">mail</div>
+     <div>
+      <div  class="utt3a-title">Bize yazın</div>
+      <div  class="utt3a-spot">allcarfilo@hotmail.com</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined utt3a-icon">location_on</div>
+     <div>
+      <div  class="utt3a-title">Kolejtepe mah. ordu cad. baydar apt. </div>
+      <div  class="utt3a-spot">No: 13 c iç kapı no: z1 Şahinbey/ Gaziantep</div>
+     </div>
+    </a>
+    
   </div>
 
-  <div class="c5yjimenubody">
-    <div class="c5yjimenu">
-      <div class="c5yjimenulistbody">
-        <div class="c5yjimenulist">
-          <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/araclarimiz/">Araçlarımız</a><a href="/tr/iletisim/">İletişim</a>
-          </ul>
-        </div>
+  <div class="utt3amenubody">
+    <div class="utt3amenu">
+      <div class="utt3amenulistbody">
+        <div class="utt3amenulist"><a class="utt3amenulist-menu" href="/tr/">Anasayfa </a><div class="utt3amenulist-menu" >
+    
+      <a href="/tr/kurumsal/">
+       Kurumsal
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="utt3amenulist-menu" >
+    
+      <a href="/tr/araclarimiz/">
+       Araçlarımız
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="utt3amenulist-menu" >
+    
+      <a href="/tr/iletisim/">
+       İletişim
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .c5yji {
+  .utt3amenulist-menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .utt3amenulist-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff !important;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .utt3amenulist-menu:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .utt3amenulist-menu:hover > a {
+    color: #000 !important;
+    /* Change text color to black on hover */
+  }
+
+  .utt3amenulist-menu > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    /* background-color: #f90; */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .dropdown-content > a {
+    width: inherit;
+    padding: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .dropdown-content > a:hover {
+    background-color: #000;
+  }
+
+  .module-logo {
+    width: 300px;
+  }
+
+  .utt3abody {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .utt3abody > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    gap: 10px;
+  }
+
+  .utt3a-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: --titlecolor--;
+  }
+
+  .utt3a-spot {
+    font-size: 16px;
+    color: --spotcolor--;
+  }
+
+  .utt3a-icon {
+    font-size: 36px !important;
+    color: --iconcolor--;
+  }
+
+  .utt3a {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,7 +228,7 @@
     justify-content: center;
   }
 
-  .c5yjititle {
+  .utt3atitle {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -85,7 +236,7 @@
     justify-content: center;
   }
 
-  .c5yjititlebody {
+  .utt3atitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -93,39 +244,37 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .c5yjititlebodytitle {
+  .utt3atitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .c5yjititlebodylang {
+  .utt3atitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .c5yjititlebodylang ul {
+  .utt3atitlebodylang ul {
     display: flex;
     gap: 5px;
+    position: relative;
   }
 
-  .c5yjibody {
-    width: var(--max);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0px 5px 0px;
+  .utt3atitlebodylang li {
+    position: relative;
+    list-style: none;
   }
 
-  .c5yjimenu {
+  .utt3amenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .c5yjimenulist {
+  .utt3amenulist {
     width: calc(100% - 20px);
     background-color: #000;
     padding: 10px;
@@ -133,7 +282,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .c5yjimenubody {
+  .utt3amenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -141,1520 +290,190 @@
     justify-content: center;
   }
 
-  .c5yjimenulist ul {
+  .utt3amenulist {
     width: 100%;
-    list-style-type: none;
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
-    overflow-x: auto;
-  }
-
-  .c5yjimenulist ul a {
     padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* overflow-x: auto; */
+  }
+
+  .utt3amenulistbody {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .c5yjimenulist ul a:hover {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-  }
-
-  .c5yjimenulistbody {
-    width: 100%;
-  }
-
-  .c5yjibodylogo {
-    height: 100px;
-    max-width: 90vw;
-    max-height: 100px;
   }
 
   @media screen and (max-width: 1024px) {
-    .c5yjimenu {
+    .utt3amenu {
       overflow-x: auto;
     }
 
-    .c5yjimenulist ul {
+    .utt3amenulist {
       flex-direction: row;
     }
 
-    .c5yjibodylogo {
-      height: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .module-logo {
+      width: 200px;
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    .c5yjimenulist ul a {
-      font-size: 14px;
+    .utt3abody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 </style>
 </div>
-    <div id="content"><div class="fyuk4">
-
-
-
-  <div class="fyuk4head">
-    <!-- aaaaaaaaaaaa -->
-  </div>
-
-  <div class="fyuk4body"><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Cıtroen Elysee 2019 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+    <div id="content"><div class="a49fu">
+  <div class="a49fubody"><a href="/tr/citroen-elysee-2019-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/2/y44tl.png" alt="Cıtroen Elysee 2019 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Cıtroen
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Elysee 2019
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Cıtroen Elysee 2018 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Cıtroen Elysee 2019 Model Manuel Dizel</div>
+</div></a><a href="/tr/citroen-elysee-2018-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/3/ur3oc.png" alt="Cıtroen Elysee 2018 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Cıtroen
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Elysee 2018
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Renault Clio4 2019 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Cıtroen Elysee 2018 Model Manuel Dizel</div>
+</div></a><a href="/tr/renault-clio4-2019-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/4/ircjz.jpeg" alt="Renault Clio4 2019 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Renault
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Clio4 2019
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Renault Clio Grafter 2017 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Renault Clio4 2019 Model Manuel Dizel</div>
+</div></a><a href="/tr/renault-clio-grafter-2017-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/5/khbbm.png" alt="Renault Clio Grafter 2017 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Renault
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Clio Grafter 2017
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Fiat Egea 2019 Model Otomatik Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Renault Clio Grafter 2017 Model Manuel Dizel</div>
+</div></a><a href="/tr/fiat-egea-2019-model-otomatik-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/6/t8hzo.jpg" alt="Fiat Egea 2019 Model Otomatik Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Fiat
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Egea 2019
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Otomatik
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Fiat Linea Manuel Dizel 2016 Model&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Fiat Egea 2019 Model Otomatik Dizel</div>
+</div></a><a href="/tr/fiat-linea-manuel-dizel-2016-model"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/7/s1zks.webp" alt="Fiat Linea Manuel Dizel 2016 Model">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Fiat
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Linea 2016
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Honda Accord 2015 Model Otomatik Benzinli&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Fiat Linea Manuel Dizel 2016 Model</div>
+</div></a><a href="/tr/honda-accord-2015-model-otomatik-benzinli"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/8/f7iqn.jpg" alt="Honda Accord 2015 Model Otomatik Benzinli">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Honda
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Accord 2015
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Benzinli
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Otomatik
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Peugeot 301 2018 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Honda Accord 2015 Model Otomatik Benzinli</div>
+</div></a><a href="/tr/peugeot-301-2018-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/9/bkbh6.png" alt="Peugeot 301 2018 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Peugeot
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        301 2018
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Renault Fluence 2016 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Peugeot 301 2018 Model Manuel Dizel</div>
+</div></a><a href="/tr/renault-fluence-2016-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/10/w2hte.jpg" alt="Renault Fluence 2016 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Renault
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Fluence 2016
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Opel Astra J Kasa 2017 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Renault Fluence 2016 Model Manuel Dizel</div>
+</div></a><a href="/tr/opel-astra-j-kasa-2017-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/11/rqhsx.jpg" alt="Opel Astra J Kasa 2017 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Opel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Astra J Kasa 2017
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Renault Scenec 2016 Model Otomatik Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Opel Astra J Kasa 2017 Model Manuel Dizel</div>
+</div></a><a href="/tr/renault-scenec-2016-model-otomatik-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/12/mpr7h.jpg" alt="Renault Scenec 2016 Model Otomatik Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Renault
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Scenec 2016
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Otomatik
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Kia Rio 2017 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Renault Scenec 2016 Model Otomatik Dizel</div>
+</div></a><a href="/tr/kia-rio-2017-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/13/hbie4.png" alt="Kia Rio 2017 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Kia
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Rio 2017
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Opel Corsa 2014 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Kia Rio 2017 Model Manuel Dizel</div>
+</div></a><a href="/tr/opel-corsa-2014-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/14/yozrs.jpg" alt="Opel Corsa 2014 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Opel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Corsa 2014
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Ford Fiesta 2015 Model Manuel Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Opel Corsa 2014 Model Manuel Dizel</div>
+</div></a><a href="/tr/ford-fiesta-2015-model-manuel-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/15/piz6k.jpeg" alt="Ford Fiesta 2015 Model Manuel Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Ford
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Fiesta 2015
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Hyundai I20 2018 Model Manuel Benzinli&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Ford Fiesta 2015 Model Manuel Dizel</div>
+</div></a><a href="/tr/hyundai-i20-2018-model-manuel-benzinli"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/16/oxvqw.png" alt="Hyundai I20 2018 Model Manuel Benzinli">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Hyundai
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        I20 2018
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Benzinli
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Manuel
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=BMW X5 2010 Model Otomatik Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Hyundai I20 2018 Model Manuel Benzinli</div>
+</div></a><a href="/tr/bmw-x5-2010-model-otomatik-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/17/niqsa.jpg" alt="BMW X5 2010 Model Otomatik Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        BMW
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        X5 2010
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Otomatik
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Ford Fusion 2014 Model Otomatik Dizel&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">BMW X5 2010 Model Otomatik Dizel</div>
+</div></a><a href="/tr/ford-fusion-2014-model-otomatik-dizel"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/18/fzl4r.png" alt="Ford Fusion 2014 Model Otomatik Dizel">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Ford
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Fusion 2014
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        dizel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Otomatik
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Ford Fiesta 2015 Model Otomatik Benzinli&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Ford Fusion 2014 Model Otomatik Dizel</div>
+</div></a><a href="/tr/ford-fiesta-2015-model-otomatik-benzinli"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/19/nrs35.png" alt="Ford Fiesta 2015 Model Otomatik Benzinli">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Ford
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Fiesta 2015
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Benzinli
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Otomatik
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
-</div></a><a 
-      
-      
-  href="https://api.whatsapp.com/send/?phone=905321668027&text=Hyundai I20 2016 Model Otomatik Benzinli&app_absent=0"
-  target="_blank"
-      
-      
-      > <div class="fyuk4bodyitem">
-  
-      <div class="fyuk4bodyitemimg">
+  <div class="a49fubodyitemtitle">Ford Fiesta 2015 Model Otomatik Benzinli</div>
+</div></a><a href="/tr/hyundai-i20-2016-model-otomatik-benzinli"> <div class="a49fubodyitem">
+  <div class="a49fubodyitemimg">
       <img src="/page/20/c2jrg.webp" alt="Hyundai I20 2016 Model Otomatik Benzinli">
   </div>
-
-
-  <div class="fyuk4bodyitemtitle">
-  
-  
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Hyundai
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        I20 2016
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Yakıt
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Benzinli
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Vites
-        </div>
-        <div class="fyuk4bodyitemtitlename">
-        Otomatik
-        </div>
-        </div>
-   
-  
-  </div>
-
-  <div class="fyuk4bodyitemspot">
-  
-  <div class="w100">
-  Hemen Teklif Al 
-   </div>
-  
-  <img src="/src/icon/whatsapp.png" height=" 35"">
-  
-  </div>
-
-
+  <div class="a49fubodyitemtitle">Hyundai I20 2016 Model Otomatik Benzinli</div>
 </div></a></div>
 </div>
 
 <style>
-  .fyuk4head {
-    width: var(--max);
-  }
-
-
-
-
-
-
-
-  .fyuk4bodyitemtitlename {
-    font-weight: 500;
-  }
-
-  .fyuk4 {
+  .a49fu {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
   }
 
-  .fyuk4body {
+  .a49fubody {
     width: var(--max);
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .fyuk4bodyitem {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    padding: 10px;
+  .a49fubodyitem {
+    aspect-ratio: 7 / 4;
+    background-color: #999;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 5px;
   }
 
-  .fyuk4bodyitemimg {
+  .a49fubodyitemimg {
     aspect-ratio: 12 / 8;
     display: flex;
   }
 
-  .fyuk4bodyitemimg img {
+  .a49fubodyitemimg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
   }
 
-  .fyuk4bodyitemtitle {
+  .a49fubodyitemtitle {
     border-radius: 3px;
     padding: 5px;
-    margin-top: 5px;
     background-color: #e9e9e9;
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  .fyuk4bodyitemtitle>div {
-    display: flex;
-    justify-content: space-between;
-    border: solid 1px #000;
-    border-width: 0px 0px 1px 0px;
-    padding: 5px;
-
-  }
-
-  .fyuk4bodyitemspot {
-    border-radius: 3px;
-    height: 50px !important;
-    padding: 5px;
-    margin-top: 5px;
-    background-color: #f07f09;
-   
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
-
-  .fyuk4bodyitemspot>div {
-    width: 100%;
-    color: #fff;
-    font-size: 16px;
-  }
-
 
   @media screen and (max-width: 1024px) {
-    .fyuk4body {
+    .a49fubody {
       width: calc(100% - 10px);
       margin: 0px 5px 0px 5px;
       grid-template-columns: repeat(3, 1fr);
@@ -1662,13 +481,14 @@
   }
 
   @media screen and (max-width: 768px) {
-    .fyuk4body {
+    .a49fubody {
       width: calc(100% - 10px);
       margin: 0px 5px 0px 5px;
       grid-template-columns: repeat(2, 1fr);
     }
   }
-</style></div>
+</style>
+</div>
     <div id="footer"><footer class="footer">
   <div class="waves">
     <div class="wave" id="wave1"></div>

@@ -37,13 +37,13 @@
   </head>
 
   <body>
-    <div id="header"><div class="wnguq">
-  <div class="wnguqtitle">
-    <div class="wnguqtitlebody">
-      <div class="wnguqtitlebodytitle">
+    <div id="header"><div class="x7dln">
+  <div class="x7dlntitle">
+    <div class="x7dlntitlebody">
+      <div class="x7dlntitlebodytitle">
         All Car Filo Gaziantep Web Sitemize Hoşgeldiniz
       </div>
-      <div class="wnguqtitlebodylang">
+      <div class="x7dlntitlebodylang">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
         </ul>
@@ -51,25 +51,176 @@
     </div>
   </div>
 
-  <div class="wnguqbody">
-    <a href="/tr"><img src="/img/logo.svg" class="wnguqbodylogo" /></a>
+  <div class="x7dlnbody">
+    <a href="/tr"><img src="/img/logo.svg" class="module-logo" /></a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined x7dln-icon">phone</div>
+     <div>
+      <div  class="x7dln-title">Bizi hemen arayın</div>
+      <div  class="x7dln-spot">+90 532 166 80 27</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined x7dln-icon">mail</div>
+     <div>
+      <div  class="x7dln-title">Bize yazın</div>
+      <div  class="x7dln-spot">allcarfilo@hotmail.com</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined x7dln-icon">location_on</div>
+     <div>
+      <div  class="x7dln-title">Kolejtepe mah. ordu cad. baydar apt. </div>
+      <div  class="x7dln-spot">No: 13 c iç kapı no: z1 Şahinbey/ Gaziantep</div>
+     </div>
+    </a>
+    
   </div>
 
-  <div class="wnguqmenubody">
-    <div class="wnguqmenu">
-      <div class="wnguqmenulistbody">
-        <div class="wnguqmenulist">
-          <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/araclarimiz/">Araçlarımız</a><a href="/tr/iletisim/">İletişim</a>
-          </ul>
-        </div>
+  <div class="x7dlnmenubody">
+    <div class="x7dlnmenu">
+      <div class="x7dlnmenulistbody">
+        <div class="x7dlnmenulist"><a class="x7dlnmenulist-menu" href="/tr/">Anasayfa </a><div class="x7dlnmenulist-menu" >
+    
+      <a href="/tr/kurumsal/">
+       Kurumsal
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="x7dlnmenulist-menu" >
+    
+      <a href="/tr/araclarimiz/">
+       Araçlarımız
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="x7dlnmenulist-menu" >
+    
+      <a href="/tr/iletisim/">
+       İletişim
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .wnguq {
+  .x7dlnmenulist-menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .x7dlnmenulist-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff !important;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .x7dlnmenulist-menu:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .x7dlnmenulist-menu:hover > a {
+    color: #000 !important;
+    /* Change text color to black on hover */
+  }
+
+  .x7dlnmenulist-menu > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    /* background-color: #f90; */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .dropdown-content > a {
+    width: inherit;
+    padding: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .dropdown-content > a:hover {
+    background-color: #000;
+  }
+
+  .module-logo {
+    width: 300px;
+  }
+
+  .x7dlnbody {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .x7dlnbody > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    gap: 10px;
+  }
+
+  .x7dln-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: --titlecolor--;
+  }
+
+  .x7dln-spot {
+    font-size: 16px;
+    color: --spotcolor--;
+  }
+
+  .x7dln-icon {
+    font-size: 36px !important;
+    color: --iconcolor--;
+  }
+
+  .x7dln {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,7 +228,7 @@
     justify-content: center;
   }
 
-  .wnguqtitle {
+  .x7dlntitle {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -85,7 +236,7 @@
     justify-content: center;
   }
 
-  .wnguqtitlebody {
+  .x7dlntitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -93,39 +244,37 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .wnguqtitlebodytitle {
+  .x7dlntitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .wnguqtitlebodylang {
+  .x7dlntitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .wnguqtitlebodylang ul {
+  .x7dlntitlebodylang ul {
     display: flex;
     gap: 5px;
+    position: relative;
   }
 
-  .wnguqbody {
-    width: var(--max);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0px 5px 0px;
+  .x7dlntitlebodylang li {
+    position: relative;
+    list-style: none;
   }
 
-  .wnguqmenu {
+  .x7dlnmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .wnguqmenulist {
+  .x7dlnmenulist {
     width: calc(100% - 20px);
     background-color: #000;
     padding: 10px;
@@ -133,7 +282,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .wnguqmenubody {
+  .x7dlnmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -141,97 +290,70 @@
     justify-content: center;
   }
 
-  .wnguqmenulist ul {
+  .x7dlnmenulist {
     width: 100%;
-    list-style-type: none;
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
-    overflow-x: auto;
-  }
-
-  .wnguqmenulist ul a {
     padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* overflow-x: auto; */
+  }
+
+  .x7dlnmenulistbody {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .wnguqmenulist ul a:hover {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-  }
-
-  .wnguqmenulistbody {
-    width: 100%;
-  }
-
-  .wnguqbodylogo {
-    height: 100px;
-    max-width: 90vw;
-    max-height: 100px;
   }
 
   @media screen and (max-width: 1024px) {
-    .wnguqmenu {
+    .x7dlnmenu {
       overflow-x: auto;
     }
 
-    .wnguqmenulist ul {
+    .x7dlnmenulist {
       flex-direction: row;
     }
 
-    .wnguqbodylogo {
-      height: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .module-logo {
+      width: 200px;
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    .wnguqmenulist ul a {
-      font-size: 14px;
+    .x7dlnbody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 </style>
 </div>
-    <div id="content"><div class="dyuku">
-  <div class="dyukubody">
+    <div id="content"><div class="vywge">
+  <div class="vywgebody">
     <img src="/img/map.png" />
 
-    <div class="dyukucontainer">
-      <div class="dyukucontainerbody">
-        <div class="dyukucontainertitle">Bize Ulaşın</div>
-        <div class="dyukucontainerlist">
+    <div class="vywgecontainer">
+      <div class="vywgecontainerbody">
+        <div class="vywgecontainertitle">Bize Ulaşın</div>
+        <div class="vywgecontainerlist">
    <div>
     <span class="material-symbols-outlined">
          phone
     </span>
   </div>
     <div>0532 166 80 27</div>
-  </div><div class="dyukucontainerlist">
+  </div><div class="vywgecontainerlist">
    <div>
     <span class="material-symbols-outlined">
          phone
     </span>
   </div>
     <div>0533 714 76 27</div>
-  </div><div class="dyukucontainerlist">
+  </div><div class="vywgecontainerlist">
    <div>
     <span class="material-symbols-outlined">
          email
     </span>
   </div>
     <div>allcarfilo@hotmail.com</div>
-  </div><div class="dyukucontainerlist">
+  </div><div class="vywgecontainerlist">
    <div>
     <span class="material-symbols-outlined">
          map
@@ -242,11 +364,11 @@
       </div>
     </div>
   </div>
-  <div class="dyuku-background-overlay"></div>
+  <div class="vywge-background-overlay"></div>
 </div>
 
 <style>
-  .dyuku {
+  .vywge {
     width: 100%;
     padding: 50px 0px 50px 0px;
     display: flex;
@@ -255,13 +377,13 @@
     position: relative;
   }
 
-  .dyukucontainertitle {
+  .vywgecontainertitle {
     font-size: 26px;
     font-weight: bold;
     margin-bottom: 15px;
   }
 
-  .dyukucontainerlist {
+  .vywgecontainerlist {
     padding: 5px;
     display: flex;
     border-radius: 5px;
@@ -269,31 +391,31 @@
     gap: 15px;
   }
 
-  .dyukucontainerlist > div {
+  .vywgecontainerlist > div {
     display: flex;
     align-items: center;
     font-size: 18px;
   }
 
-  .dyukucontainer {
+  .vywgecontainer {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
-  .dyukucontainerbody {
+  .vywgecontainerbody {
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
-  .dyukubody > * {
+  .vywgebody > * {
     width: 50%;
     background-color: #ffffff90;
   }
 
-  .dyukubody {
+  .vywgebody {
     width: calc(var(--max) - 20px);
     background-color: #e9e9e9d9;
     display: flex;
@@ -302,7 +424,7 @@
     gap: 10px;
   }
 
-  .dyuku-background-overlay {
+  .vywge-background-overlay {
     position: absolute;
     /* Position overlay absolutely */
     top: 0;
@@ -318,12 +440,12 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .dyukubody > * {
+    .vywgebody > * {
       width: 100%;
       background-color: #ffffff90;
     }
 
-    .dyukubody {
+    .vywgebody {
       flex-direction: column;
       gap: 20px;
     }

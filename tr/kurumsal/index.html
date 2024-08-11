@@ -37,13 +37,13 @@
   </head>
 
   <body>
-    <div id="header"><div class="sznlq">
-  <div class="sznlqtitle">
-    <div class="sznlqtitlebody">
-      <div class="sznlqtitlebodytitle">
+    <div id="header"><div class="cooo2">
+  <div class="cooo2title">
+    <div class="cooo2titlebody">
+      <div class="cooo2titlebodytitle">
         All Car Filo Gaziantep Web Sitemize Hoşgeldiniz
       </div>
-      <div class="sznlqtitlebodylang">
+      <div class="cooo2titlebodylang">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
         </ul>
@@ -51,25 +51,176 @@
     </div>
   </div>
 
-  <div class="sznlqbody">
-    <a href="/tr"><img src="/img/logo.svg" class="sznlqbodylogo" /></a>
+  <div class="cooo2body">
+    <a href="/tr"><img src="/img/logo.svg" class="module-logo" /></a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined cooo2-icon">phone</div>
+     <div>
+      <div  class="cooo2-title">Bizi hemen arayın</div>
+      <div  class="cooo2-spot">+90 532 166 80 27</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined cooo2-icon">mail</div>
+     <div>
+      <div  class="cooo2-title">Bize yazın</div>
+      <div  class="cooo2-spot">allcarfilo@hotmail.com</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined cooo2-icon">location_on</div>
+     <div>
+      <div  class="cooo2-title">Kolejtepe mah. ordu cad. baydar apt. </div>
+      <div  class="cooo2-spot">No: 13 c iç kapı no: z1 Şahinbey/ Gaziantep</div>
+     </div>
+    </a>
+    
   </div>
 
-  <div class="sznlqmenubody">
-    <div class="sznlqmenu">
-      <div class="sznlqmenulistbody">
-        <div class="sznlqmenulist">
-          <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/araclarimiz/">Araçlarımız</a><a href="/tr/iletisim/">İletişim</a>
-          </ul>
-        </div>
+  <div class="cooo2menubody">
+    <div class="cooo2menu">
+      <div class="cooo2menulistbody">
+        <div class="cooo2menulist"><a class="cooo2menulist-menu" href="/tr/">Anasayfa </a><div class="cooo2menulist-menu" >
+    
+      <a href="/tr/kurumsal/">
+       Kurumsal
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="cooo2menulist-menu" >
+    
+      <a href="/tr/araclarimiz/">
+       Araçlarımız
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="cooo2menulist-menu" >
+    
+      <a href="/tr/iletisim/">
+       İletişim
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .sznlq {
+  .cooo2menulist-menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cooo2menulist-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff !important;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .cooo2menulist-menu:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .cooo2menulist-menu:hover > a {
+    color: #000 !important;
+    /* Change text color to black on hover */
+  }
+
+  .cooo2menulist-menu > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    /* background-color: #f90; */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .dropdown-content > a {
+    width: inherit;
+    padding: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .dropdown-content > a:hover {
+    background-color: #000;
+  }
+
+  .module-logo {
+    width: 300px;
+  }
+
+  .cooo2body {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .cooo2body > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    gap: 10px;
+  }
+
+  .cooo2-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: --titlecolor--;
+  }
+
+  .cooo2-spot {
+    font-size: 16px;
+    color: --spotcolor--;
+  }
+
+  .cooo2-icon {
+    font-size: 36px !important;
+    color: --iconcolor--;
+  }
+
+  .cooo2 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,7 +228,7 @@
     justify-content: center;
   }
 
-  .sznlqtitle {
+  .cooo2title {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -85,7 +236,7 @@
     justify-content: center;
   }
 
-  .sznlqtitlebody {
+  .cooo2titlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -93,39 +244,37 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .sznlqtitlebodytitle {
+  .cooo2titlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .sznlqtitlebodylang {
+  .cooo2titlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .sznlqtitlebodylang ul {
+  .cooo2titlebodylang ul {
     display: flex;
     gap: 5px;
+    position: relative;
   }
 
-  .sznlqbody {
-    width: var(--max);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0px 5px 0px;
+  .cooo2titlebodylang li {
+    position: relative;
+    list-style: none;
   }
 
-  .sznlqmenu {
+  .cooo2menu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .sznlqmenulist {
+  .cooo2menulist {
     width: calc(100% - 20px);
     background-color: #000;
     padding: 10px;
@@ -133,7 +282,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .sznlqmenubody {
+  .cooo2menubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -141,70 +290,43 @@
     justify-content: center;
   }
 
-  .sznlqmenulist ul {
+  .cooo2menulist {
     width: 100%;
-    list-style-type: none;
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
-    overflow-x: auto;
-  }
-
-  .sznlqmenulist ul a {
     padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* overflow-x: auto; */
+  }
+
+  .cooo2menulistbody {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .sznlqmenulist ul a:hover {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-  }
-
-  .sznlqmenulistbody {
-    width: 100%;
-  }
-
-  .sznlqbodylogo {
-    height: 100px;
-    max-width: 90vw;
-    max-height: 100px;
   }
 
   @media screen and (max-width: 1024px) {
-    .sznlqmenu {
+    .cooo2menu {
       overflow-x: auto;
     }
 
-    .sznlqmenulist ul {
+    .cooo2menulist {
       flex-direction: row;
     }
 
-    .sznlqbodylogo {
-      height: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .module-logo {
+      width: 200px;
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    .sznlqmenulist ul a {
-      font-size: 14px;
+    .cooo2body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 </style>
 </div>
-    <div id="content"><div class="pvqlq">
-  <div class="pvqlq-body"><h1> Hakkımızda </h1>
+    <div id="content"><div class="wr366">
+  <div class="wr366-body"><h1> Hakkımızda </h1>
 
  <div> 2005 yılında sektöre adım atan Mustafa Özden tarafından kurulan All Car Filo, Gaziantep'te güvenilir ve kaliteli oto kiralama hizmeti sunmayı ilke edinmiş köklü bir kuruluştur. Kuruluşumuzdan bu yana dürüstlük, müşteri memnuniyeti ve profesyonellik ilkelerine bağlı kalarak, her müşterimize en iyi hizmeti sunma gayretindeyiz.</div>
   
@@ -215,13 +337,13 @@
   <div>Gaziantep oto kiralama sektöründe güvenilir bir çözüm ortağı arıyorsanız, All Car Filo ile iletişime geçin. Mustafa Özden ve ekibi olarak, sizlere en uygun çözümü sunmak ve beklentilerinizi karşılamak için buradayız.</div>
 
 <br><br><br><br></div>
-  <div class="pvqlq-img">
+  <div class="wr366-img">
     <img src="" width="100%" />
   </div>
 </div>
 
 <style>
-  .pvqlq {
+  .wr366 {
     width: var(--max);
     display: flex;
     flex-direction: row;
@@ -229,14 +351,14 @@
     margin-top: 20px;
   }
 
-  .pvqlq-body {
+  .wr366-body {
     flex: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
-  .pvqlq-img {
+  .wr366-img {
     flex: 1;
     display: flex;
     align-items: start;
@@ -244,43 +366,43 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .pvqlq {
+    .wr366 {
       flex-direction: column;
       width: calc(100% - 10px);
       padding: 5px;
       gap: 20px;
     }
 
-    .pvqlq-img {
+    .wr366-img {
       width: 100%;
     }
 
-    .pvqlq-body {
+    .wr366-body {
       width: 100%;
     }
   }
 </style>
-<div class="r65ai-out">
-  <div class="r65ai">
-    <div class="r65ai-left">
-      <img src="/img/bed1zw/index.jpg" class="r65ai-left-img" />
+<div class="urrhs-out">
+  <div class="urrhs">
+    <div class="urrhs-left">
+      <img src="/img/bed1zw/index.jpg" class="urrhs-left-img" />
     </div>
 
-    <div class="r65ai-right">
-      <div class="r65ai-right-body">
-        <div class="r65ai-right-body-name">All Car Filo Gaziantep'i Tanıyın</div>
+    <div class="urrhs-right">
+      <div class="urrhs-right-body">
+        <div class="urrhs-right-body-name">All Car Filo Gaziantep'i Tanıyın</div>
 
-        <div class="r65ai-right-body-spot">2005 yılında sektöre adım atan Mustafa Özden tarafından kurulan All Car Filo, Gaziantep'te güvenilir ve kaliteli oto kiralama hizmeti sunmayı ilke edinmiş köklü bir kuruluştur. Kuruluşumuzdan bu yana dürüstlük, müşteri memnuniyeti ve profesyonellik ilkelerine bağlı kalarak, her müşterimize en iyi hizmeti sunma gayretindeyiz.</div>
+        <div class="urrhs-right-body-spot">2005 yılında sektöre adım atan Mustafa Özden tarafından kurulan All Car Filo, Gaziantep'te güvenilir ve kaliteli oto kiralama hizmeti sunmayı ilke edinmiş köklü bir kuruluştur. Kuruluşumuzdan bu yana dürüstlük, müşteri memnuniyeti ve profesyonellik ilkelerine bağlı kalarak, her müşterimize en iyi hizmeti sunma gayretindeyiz.</div>
 
-        <div class="r65ai-right-body-chile">
-          <div class="r65ai-right-body-chile-row">
-            <div class="r65ai-right-body-chile-row-name">Vizyonumuz</div>
-            <div class="r65ai-right-body-chile-row-spot">Sektörden tecrübeyle, lüksdan özgün fiyatlı ekonomiden araçlara esneklik ve rahatlama sağlıyoruz. İster günlük, ister aylik araç kiralamaya, her türlü seyahat ihtiyacınızı filomuzda karşılıyoruz.</div>
+        <div class="urrhs-right-body-chile">
+          <div class="urrhs-right-body-chile-row">
+            <div class="urrhs-right-body-chile-row-name">Vizyonumuz</div>
+            <div class="urrhs-right-body-chile-row-spot">Sektörden tecrübeyle, lüksdan özgün fiyatlı ekonomiden araçlara esneklik ve rahatlama sağlıyoruz. İster günlük, ister aylik araç kiralamaya, her türlü seyahat ihtiyacınızı filomuzda karşılıyoruz.</div>
           </div>
 
-          <div class="r65ai-right-body-chile-row">
-            <div class="r65ai-right-body-chile-row-name">Misyonumuz</div>
-            <div class="r65ai-right-body-chile-row-spot">Havalimanı, şehir içi, işe gitmek üzere ve özel etkinliklere kadar her türlü ulaşım ihtiyacınızda All Car Filo yanınızda. Dürüstlükten ödün vermeyen çalışma prensiplerimizle sektördeki lider konumumuzu koruyoruz.</div>
+          <div class="urrhs-right-body-chile-row">
+            <div class="urrhs-right-body-chile-row-name">Misyonumuz</div>
+            <div class="urrhs-right-body-chile-row-spot">Havalimanı, şehir içi, işe gitmek üzere ve özel etkinliklere kadar her türlü ulaşım ihtiyacınızda All Car Filo yanınızda. Dürüstlükten ödün vermeyen çalışma prensiplerimizle sektördeki lider konumumuzu koruyoruz.</div>
           </div>
         </div>
       </div>
@@ -289,7 +411,7 @@
 </div>
 
 <style>
-  .r65ai-out {
+  .urrhs-out {
     background-color: #000;
     width: 100%;
     display: flex;
@@ -300,14 +422,14 @@
     float: left;
   }
 
-  .r65ai-right-body-chile {
+  .urrhs-right-body-chile {
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin-top: 15px;
   }
 
-  .r65ai-right-body-chile-row {
+  .urrhs-right-body-chile-row {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -317,16 +439,16 @@
     padding-left: 10px;
   }
 
-  .r65ai-right-body-chile-row-name {
+  .urrhs-right-body-chile-row-name {
     font-size: 22px;
     font-weight: 500;
   }
 
-  .r65ai-right-body-chile-row-spot {
+  .urrhs-right-body-chile-row-spot {
     font-size: 18px;
   }
 
-  .r65ai-right-body {
+  .urrhs-right-body {
     width: 100%;
     margin-left: 200px;
     display: flex;
@@ -335,16 +457,16 @@
     padding: 10px;
   }
 
-  .r65ai-right-body-name {
+  .urrhs-right-body-name {
     font-size: 28px;
     font-weight: 500;
   }
 
-  .r65ai-right-body-spot {
+  .urrhs-right-body-spot {
     font-size: 18px;
   }
 
-  .r65ai {
+  .urrhs {
     width: var(--max);
     display: flex;
     flex-direction: row;
@@ -352,20 +474,20 @@
     float: left;
   }
 
-  .r65ai-right {
+  .urrhs-right {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .r65ai-left {
+  .urrhs-left {
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: right;
   }
 
-  .r65ai-left-img {
+  .urrhs-left-img {
     aspect-ratio: 1/1;
     border-radius: 100%;
     width: 300px;
@@ -376,7 +498,7 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .r65ai {
+    .urrhs {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -385,41 +507,41 @@
       padding: 15px 0px 15px 0px;
     }
 
-    .r65ai-left-img {
+    .urrhs-left-img {
       width: calc(var(--max) / 2);
       max-width: 200px;
       margin-right: 0px;
       float: left;
     }
 
-    .r65ai-right-body {
+    .urrhs-right-body {
       margin-left: 0;
       padding: 10px;
     }
 
-    .r65ai-left {
+    .urrhs-left {
       justify-content: center;
       background-color: #000;
     }
   }
 
   @media screen and (min-width: 1024px) {
-    .r65ai {
+    .urrhs {
       width: var(--max);
       display: flex;
       flex-direction: row;
       min-height: 400px;
     }
 
-    .r65ai-right-body-chile-row {
+    .urrhs-right-body-chile-row {
       flex: 1;
     }
 
-    .r65ai-right {
+    .urrhs-right {
       flex: 5;
     }
 
-    .r65ai-left {
+    .urrhs-left {
       flex: 1;
     }
   }

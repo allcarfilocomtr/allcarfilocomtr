@@ -37,13 +37,13 @@
   </head>
 
   <body>
-    <div id="header"><div class="d37hz">
-  <div class="d37hztitle">
-    <div class="d37hztitlebody">
-      <div class="d37hztitlebodytitle">
+    <div id="header"><div class="o3adr">
+  <div class="o3adrtitle">
+    <div class="o3adrtitlebody">
+      <div class="o3adrtitlebodytitle">
         All Car Filo Gaziantep Web Sitemize Hoşgeldiniz
       </div>
-      <div class="d37hztitlebodylang">
+      <div class="o3adrtitlebodylang">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
         </ul>
@@ -51,25 +51,176 @@
     </div>
   </div>
 
-  <div class="d37hzbody">
-    <a href="/tr"><img src="/img/logo.svg" class="d37hzbodylogo" /></a>
+  <div class="o3adrbody">
+    <a href="/tr"><img src="/img/logo.svg" class="module-logo" /></a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined o3adr-icon">phone</div>
+     <div>
+      <div  class="o3adr-title">Bizi hemen arayın</div>
+      <div  class="o3adr-spot">+90 532 166 80 27</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined o3adr-icon">mail</div>
+     <div>
+      <div  class="o3adr-title">Bize yazın</div>
+      <div  class="o3adr-spot">allcarfilo@hotmail.com</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined o3adr-icon">location_on</div>
+     <div>
+      <div  class="o3adr-title">Kolejtepe mah. ordu cad. baydar apt. </div>
+      <div  class="o3adr-spot">No: 13 c iç kapı no: z1 Şahinbey/ Gaziantep</div>
+     </div>
+    </a>
+    
   </div>
 
-  <div class="d37hzmenubody">
-    <div class="d37hzmenu">
-      <div class="d37hzmenulistbody">
-        <div class="d37hzmenulist">
-          <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/araclarimiz/">Araçlarımız</a><a href="/tr/iletisim/">İletişim</a>
-          </ul>
-        </div>
+  <div class="o3adrmenubody">
+    <div class="o3adrmenu">
+      <div class="o3adrmenulistbody">
+        <div class="o3adrmenulist"><a class="o3adrmenulist-menu" href="/tr/">Anasayfa </a><div class="o3adrmenulist-menu" >
+    
+      <a href="/tr/kurumsal/">
+       Kurumsal
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="o3adrmenulist-menu" >
+    
+      <a href="/tr/araclarimiz/">
+       Araçlarımız
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="o3adrmenulist-menu" >
+    
+      <a href="/tr/iletisim/">
+       İletişim
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .d37hz {
+  .o3adrmenulist-menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .o3adrmenulist-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff !important;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .o3adrmenulist-menu:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .o3adrmenulist-menu:hover > a {
+    color: #000 !important;
+    /* Change text color to black on hover */
+  }
+
+  .o3adrmenulist-menu > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    /* background-color: #f90; */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .dropdown-content > a {
+    width: inherit;
+    padding: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .dropdown-content > a:hover {
+    background-color: #000;
+  }
+
+  .module-logo {
+    width: 300px;
+  }
+
+  .o3adrbody {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .o3adrbody > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    gap: 10px;
+  }
+
+  .o3adr-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: --titlecolor--;
+  }
+
+  .o3adr-spot {
+    font-size: 16px;
+    color: --spotcolor--;
+  }
+
+  .o3adr-icon {
+    font-size: 36px !important;
+    color: --iconcolor--;
+  }
+
+  .o3adr {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,7 +228,7 @@
     justify-content: center;
   }
 
-  .d37hztitle {
+  .o3adrtitle {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -85,7 +236,7 @@
     justify-content: center;
   }
 
-  .d37hztitlebody {
+  .o3adrtitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -93,39 +244,37 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .d37hztitlebodytitle {
+  .o3adrtitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .d37hztitlebodylang {
+  .o3adrtitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .d37hztitlebodylang ul {
+  .o3adrtitlebodylang ul {
     display: flex;
     gap: 5px;
+    position: relative;
   }
 
-  .d37hzbody {
-    width: var(--max);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0px 5px 0px;
+  .o3adrtitlebodylang li {
+    position: relative;
+    list-style: none;
   }
 
-  .d37hzmenu {
+  .o3adrmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .d37hzmenulist {
+  .o3adrmenulist {
     width: calc(100% - 20px);
     background-color: #000;
     padding: 10px;
@@ -133,7 +282,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .d37hzmenubody {
+  .o3adrmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -141,69 +290,131 @@
     justify-content: center;
   }
 
-  .d37hzmenulist ul {
+  .o3adrmenulist {
     width: 100%;
-    list-style-type: none;
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
-    overflow-x: auto;
-  }
-
-  .d37hzmenulist ul a {
     padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* overflow-x: auto; */
+  }
+
+  .o3adrmenulistbody {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .d37hzmenulist ul a:hover {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-  }
-
-  .d37hzmenulistbody {
-    width: 100%;
-  }
-
-  .d37hzbodylogo {
-    height: 100px;
-    max-width: 90vw;
-    max-height: 100px;
   }
 
   @media screen and (max-width: 1024px) {
-    .d37hzmenu {
+    .o3adrmenu {
       overflow-x: auto;
     }
 
-    .d37hzmenulist ul {
+    .o3adrmenulist {
       flex-direction: row;
     }
 
-    .d37hzbodylogo {
-      height: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .module-logo {
+      width: 200px;
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    .d37hzmenulist ul a {
-      font-size: 14px;
+    .o3adrbody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 </style>
 </div>
-    <div id="content">{{body}}</div>
+    <div id="content"><div class="jzz6h-title f36">
+  <span>Peugeot 301 2018 Model Manuel Dizel</span>
+</div>
+
+<div class="jzz6h">
+  <div class="jzz6h-body"></div>
+  <div class="jzz6h-img">
+    <img src="/page/9/bkbh6.png" width="100%" />
+  </div>
+</div>
+
+<style>
+  .jzz6h-title {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .jzz6h-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/page/9/{{bgimg}}');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .jzz6h-title span {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+  }
+
+  .jzz6h {
+    width: var(--max);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .jzz6h-body {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .jzz6h-img {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .jzz6h {
+      flex-direction: column;
+      width: calc(100% - 10px);
+      padding: 5px;
+      gap: 20px;
+    }
+
+    .jzz6h-img {
+      width: 100%;
+    }
+
+    .jzz6h-body {
+      width: 100%;
+    }
+  }
+
+  #content {
+    justify-content: flex-start;
+  }
+</style>
+</div>
     <div id="footer"><footer class="footer">
   <div class="waves">
     <div class="wave" id="wave1"></div>

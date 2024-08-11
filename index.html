@@ -37,13 +37,13 @@
   </head>
 
   <body>
-    <div id="header"><div class="dgfsd">
-  <div class="dgfsdtitle">
-    <div class="dgfsdtitlebody">
-      <div class="dgfsdtitlebodytitle">
+    <div id="header"><div class="ev7kx">
+  <div class="ev7kxtitle">
+    <div class="ev7kxtitlebody">
+      <div class="ev7kxtitlebodytitle">
         All Car Filo Gaziantep Web Sitemize Hoşgeldiniz
       </div>
-      <div class="dgfsdtitlebodylang">
+      <div class="ev7kxtitlebodylang">
         <ul>
           <li><a href="/tr/"><img height="25" src="/src/lang/tr.png"></a></li>
         </ul>
@@ -51,25 +51,176 @@
     </div>
   </div>
 
-  <div class="dgfsdbody">
-    <a href="/tr"><img src="/img/logo.svg" class="dgfsdbodylogo" /></a>
+  <div class="ev7kxbody">
+    <a href="/tr"><img src="/img/logo.svg" class="module-logo" /></a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined ev7kx-icon">phone</div>
+     <div>
+      <div  class="ev7kx-title">Bizi hemen arayın</div>
+      <div  class="ev7kx-spot">+90 532 166 80 27</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined ev7kx-icon">mail</div>
+     <div>
+      <div  class="ev7kx-title">Bize yazın</div>
+      <div  class="ev7kx-spot">allcarfilo@hotmail.com</div>
+     </div>
+    </a>
+    
+    <a href="" class="mobil-closed" target="_new">
+     <div class="material-symbols-outlined ev7kx-icon">location_on</div>
+     <div>
+      <div  class="ev7kx-title">Kolejtepe mah. ordu cad. baydar apt. </div>
+      <div  class="ev7kx-spot">No: 13 c iç kapı no: z1 Şahinbey/ Gaziantep</div>
+     </div>
+    </a>
+    
   </div>
 
-  <div class="dgfsdmenubody">
-    <div class="dgfsdmenu">
-      <div class="dgfsdmenulistbody">
-        <div class="dgfsdmenulist">
-          <ul>
-            <a href="/tr/">Anasayfa </a><a href="/tr/kurumsal/">Kurumsal</a><a href="/tr/araclarimiz/">Araçlarımız</a><a href="/tr/iletisim/">İletişim</a>
-          </ul>
-        </div>
+  <div class="ev7kxmenubody">
+    <div class="ev7kxmenu">
+      <div class="ev7kxmenulistbody">
+        <div class="ev7kxmenulist"><a class="ev7kxmenulist-menu" href="/tr/">Anasayfa </a><div class="ev7kxmenulist-menu" >
+    
+      <a href="/tr/kurumsal/">
+       Kurumsal
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="ev7kxmenulist-menu" >
+    
+      <a href="/tr/araclarimiz/">
+       Araçlarımız
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    <div class="ev7kxmenulist-menu" >
+    
+      <a href="/tr/iletisim/">
+       İletişim
+      </a>
+
+      <div class="dropdown-content">
+    
+    </div>
+                    </div>
+    </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .dgfsd {
+  .ev7kxmenulist-menu:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ev7kxmenulist-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff !important;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .ev7kxmenulist-menu:hover {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000 !important;
+    cursor: pointer;
+  }
+
+  .ev7kxmenulist-menu:hover > a {
+    color: #000 !important;
+    /* Change text color to black on hover */
+  }
+
+  .ev7kxmenulist-menu > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff !important;
+    /* background-color: #f90; */
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .dropdown-content > a {
+    width: inherit;
+    padding: 10px;
+    border: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .dropdown-content > a:hover {
+    background-color: #000;
+  }
+
+  .module-logo {
+    width: 300px;
+  }
+
+  .ev7kxbody {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .ev7kxbody > a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    gap: 10px;
+  }
+
+  .ev7kx-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: --titlecolor--;
+  }
+
+  .ev7kx-spot {
+    font-size: 16px;
+    color: --spotcolor--;
+  }
+
+  .ev7kx-icon {
+    font-size: 36px !important;
+    color: --iconcolor--;
+  }
+
+  .ev7kx {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -77,7 +228,7 @@
     justify-content: center;
   }
 
-  .dgfsdtitle {
+  .ev7kxtitle {
     width: 100%;
     background-color: #333;
     display: flex;
@@ -85,7 +236,7 @@
     justify-content: center;
   }
 
-  .dgfsdtitlebody {
+  .ev7kxtitlebody {
     color: #fff;
     width: var(--max);
     display: flex;
@@ -93,39 +244,37 @@
     padding: 10px 0px 10px 0px;
   }
 
-  .dgfsdtitlebodytitle {
+  .ev7kxtitlebodytitle {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: left;
   }
 
-  .dgfsdtitlebodylang {
+  .ev7kxtitlebodylang {
     width: auto;
     margin: -5px 0px -5px 0px;
   }
 
-  .dgfsdtitlebodylang ul {
+  .ev7kxtitlebodylang ul {
     display: flex;
     gap: 5px;
+    position: relative;
   }
 
-  .dgfsdbody {
-    width: var(--max);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px 0px 5px 0px;
+  .ev7kxtitlebodylang li {
+    position: relative;
+    list-style: none;
   }
 
-  .dgfsdmenu {
+  .ev7kxmenu {
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: var(--max);
   }
 
-  .dgfsdmenulist {
+  .ev7kxmenulist {
     width: calc(100% - 20px);
     background-color: #000;
     padding: 10px;
@@ -133,7 +282,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
-  .dgfsdmenubody {
+  .ev7kxmenubody {
     width: 100%;
     background-color: #000;
     display: flex;
@@ -141,119 +290,72 @@
     justify-content: center;
   }
 
-  .dgfsdmenulist ul {
+  .ev7kxmenulist {
     width: 100%;
-    list-style-type: none;
     display: flex;
     gap: 10px;
     margin: 0;
     padding: 0;
-    overflow-x: auto;
-  }
-
-  .dgfsdmenulist ul a {
     padding: 10px;
-    font-size: 16px;
-    color: #fff;
-    border-bottom: 1px solid #ddd;
+    /* overflow-x: auto; */
+  }
+
+  .ev7kxmenulistbody {
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .dgfsdmenulist ul a:hover {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    color: #000;
-    cursor: pointer;
-  }
-
-  .dgfsdmenulistbody {
-    width: 100%;
-  }
-
-  .dgfsdbodylogo {
-    height: 100px;
-    max-width: 90vw;
-    max-height: 100px;
   }
 
   @media screen and (max-width: 1024px) {
-    .dgfsdmenu {
+    .ev7kxmenu {
       overflow-x: auto;
     }
 
-    .dgfsdmenulist ul {
+    .ev7kxmenulist {
       flex-direction: row;
     }
 
-    .dgfsdbodylogo {
-      height: 50vw;
-      max-width: 50vw;
-      max-height: 100px;
+    .module-logo {
+      width: 200px;
     }
-  }
 
-  @media screen and (max-width: 768px) {
-    .dgfsdmenulist ul a {
-      font-size: 14px;
+    .ev7kxbody {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 </style>
 </div>
-    <div id="content"><div class="pm3rk">
+    <div id="content"><div class="ozd2h">
 
 
 
-  <div class="pm3rkhead">
+  <div class="ozd2hhead">
     <!-- aaaaaaaaaaaa -->
   </div>
 
-  <div class="pm3rkbody"><a 
+  <div class="ozd2hbody"><a 
       
       
   href="https://api.whatsapp.com/send/?phone=905321668027&text=Cıtroen Elysee 2019 Model Manuel Dizel&app_absent=0"
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/2/y44tl.png" alt="Cıtroen Elysee 2019 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Cıtroen
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Elysee 2019
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -263,15 +365,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Cıtroen
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Elysee 2019
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -289,42 +411,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/3/ur3oc.png" alt="Cıtroen Elysee 2018 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Cıtroen
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Elysee 2018
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -334,15 +436,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Cıtroen
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Elysee 2018
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -360,42 +482,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/4/ircjz.jpeg" alt="Renault Clio4 2019 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Renault
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Clio4 2019
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -405,15 +507,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Renault
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Clio4 2019
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -431,42 +553,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/5/khbbm.png" alt="Renault Clio Grafter 2017 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Renault
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Clio Grafter 2017
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -476,15 +578,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Renault
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Clio Grafter 2017
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -502,42 +624,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/6/t8hzo.jpg" alt="Fiat Egea 2019 Model Otomatik Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Fiat
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Egea 2019
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -547,15 +649,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Otomatik
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Fiat
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Egea 2019
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -573,42 +695,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/7/s1zks.webp" alt="Fiat Linea Manuel Dizel 2016 Model">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Fiat
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Linea 2016
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -618,15 +720,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Fiat
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Linea 2016
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -644,42 +766,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/8/f7iqn.jpg" alt="Honda Accord 2015 Model Otomatik Benzinli">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Honda
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Accord 2015
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Benzinli
         </div>
         </div>
@@ -689,15 +791,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Otomatik
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Honda
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Accord 2015
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -715,42 +837,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/9/bkbh6.png" alt="Peugeot 301 2018 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Peugeot
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        301 2018
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -760,15 +862,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Peugeot
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        301 2018
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -786,42 +908,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/10/w2hte.jpg" alt="Renault Fluence 2016 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Renault
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Fluence 2016
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -831,15 +933,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Renault
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Fluence 2016
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -857,42 +979,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/11/rqhsx.jpg" alt="Opel Astra J Kasa 2017 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Opel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Astra J Kasa 2017
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -902,15 +1004,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Opel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Astra J Kasa 2017
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -928,42 +1050,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/12/mpr7h.jpg" alt="Renault Scenec 2016 Model Otomatik Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Renault
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Scenec 2016
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -973,15 +1075,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Otomatik
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Renault
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Scenec 2016
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -999,42 +1121,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/13/hbie4.png" alt="Kia Rio 2017 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Kia
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Rio 2017
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -1044,15 +1146,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Kia
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Rio 2017
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -1070,42 +1192,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/14/yozrs.jpg" alt="Opel Corsa 2014 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Opel
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Corsa 2014
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -1115,15 +1217,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Opel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Corsa 2014
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -1141,42 +1263,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/15/piz6k.jpeg" alt="Ford Fiesta 2015 Model Manuel Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Ford
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Fiesta 2015
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Dizel
         </div>
         </div>
@@ -1186,15 +1288,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Ford
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Fiesta 2015
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -1212,42 +1334,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/16/oxvqw.png" alt="Hyundai I20 2018 Model Manuel Benzinli">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Hyundai
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        I20 2018
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Benzinli
         </div>
         </div>
@@ -1257,15 +1359,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Manuel
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Hyundai
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        I20 2018
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -1283,42 +1405,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/17/niqsa.jpg" alt="BMW X5 2010 Model Otomatik Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        BMW
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        X5 2010
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         dizel
         </div>
         </div>
@@ -1328,15 +1430,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Otomatik
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        BMW
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        X5 2010
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -1354,42 +1476,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/18/fzl4r.png" alt="Ford Fusion 2014 Model Otomatik Dizel">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Ford
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Fusion 2014
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         dizel
         </div>
         </div>
@@ -1399,15 +1501,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Otomatik
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Ford
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Fusion 2014
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -1425,42 +1547,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/19/nrs35.png" alt="Ford Fiesta 2015 Model Otomatik Benzinli">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Ford
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Fiesta 2015
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Benzinli
         </div>
         </div>
@@ -1470,15 +1572,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Otomatik
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Ford
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Fiesta 2015
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -1496,42 +1618,22 @@
   target="_blank"
       
       
-      > <div class="pm3rkbodyitem">
+      > <div class="ozd2hbodyitem">
   
-      <div class="pm3rkbodyitemimg">
+      <div class="ozd2hbodyitemimg">
       <img src="/page/20/c2jrg.webp" alt="Hyundai I20 2016 Model Otomatik Benzinli">
   </div>
 
 
-  <div class="pm3rkbodyitemtitle">
+  <div class="ozd2hbodyitemtitle">
   
   
-        
-        <div class="w100">
-        <div>
-        Marka
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        Hyundai
-        </div>
-        </div>
-   
-        
-        <div class="w100">
-        <div>
-        Model
-        </div>
-        <div class="pm3rkbodyitemtitlename">
-        I20 2016
-        </div>
-        </div>
-   
         
         <div class="w100">
         <div>
         Yakıt
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Benzinli
         </div>
         </div>
@@ -1541,15 +1643,35 @@
         <div>
         Vites
         </div>
-        <div class="pm3rkbodyitemtitlename">
+        <div class="ozd2hbodyitemtitlename">
         Otomatik
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Marka
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        Hyundai
+        </div>
+        </div>
+   
+        
+        <div class="w100">
+        <div>
+        Model
+        </div>
+        <div class="ozd2hbodyitemtitlename">
+        I20 2016
         </div>
         </div>
    
   
   </div>
 
-  <div class="pm3rkbodyitemspot">
+  <div class="ozd2hbodyitemspot">
   
   <div class="w100">
   Hemen Teklif Al 
@@ -1564,7 +1686,7 @@
 </div>
 
 <style>
-  .pm3rkhead {
+  .ozd2hhead {
     width: var(--max);
   }
 
@@ -1574,11 +1696,11 @@
 
 
 
-  .pm3rkbodyitemtitlename {
+  .ozd2hbodyitemtitlename {
     font-weight: 500;
   }
 
-  .pm3rk {
+  .ozd2h {
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -1586,14 +1708,14 @@
     flex-direction: column;
   }
 
-  .pm3rkbody {
+  .ozd2hbody {
     width: var(--max);
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .pm3rkbodyitem {
+  .ozd2hbodyitem {
     background-color: #e0e0e0;
     border-radius: 5px;
     padding: 10px;
@@ -1603,19 +1725,19 @@
     gap: 2px;
   }
 
-  .pm3rkbodyitemimg {
+  .ozd2hbodyitemimg {
     aspect-ratio: 12 / 8;
     display: flex;
   }
 
-  .pm3rkbodyitemimg img {
+  .ozd2hbodyitemimg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
   }
 
-  .pm3rkbodyitemtitle {
+  .ozd2hbodyitemtitle {
     border-radius: 3px;
     padding: 5px;
     margin-top: 5px;
@@ -1625,7 +1747,7 @@
   }
 
 
-  .pm3rkbodyitemtitle>div {
+  .ozd2hbodyitemtitle>div {
     display: flex;
     justify-content: space-between;
     border: solid 1px #000;
@@ -1634,7 +1756,7 @@
 
   }
 
-  .pm3rkbodyitemspot {
+  .ozd2hbodyitemspot {
     border-radius: 3px;
     height: 50px !important;
     padding: 5px;
@@ -1646,7 +1768,7 @@
     align-items: center;
   }
 
-  .pm3rkbodyitemspot>div {
+  .ozd2hbodyitemspot>div {
     width: 100%;
     color: #fff;
     font-size: 16px;
@@ -1654,7 +1776,7 @@
 
 
   @media screen and (max-width: 1024px) {
-    .pm3rkbody {
+    .ozd2hbody {
       width: calc(100% - 10px);
       margin: 0px 5px 0px 5px;
       grid-template-columns: repeat(3, 1fr);
@@ -1662,33 +1784,33 @@
   }
 
   @media screen and (max-width: 768px) {
-    .pm3rkbody {
+    .ozd2hbody {
       width: calc(100% - 10px);
       margin: 0px 5px 0px 5px;
       grid-template-columns: repeat(2, 1fr);
     }
   }
-</style><div class="nyda5-out">
-  <div class="nyda5">
-    <div class="nyda5-left">
-      <img src="/img/bed1zw/index.jpg" class="nyda5-left-img" />
+</style><div class="y9hse-out">
+  <div class="y9hse">
+    <div class="y9hse-left">
+      <img src="/img/bed1zw/index.jpg" class="y9hse-left-img" />
     </div>
 
-    <div class="nyda5-right">
-      <div class="nyda5-right-body">
-        <div class="nyda5-right-body-name">All Car Filo Gaziantep'i Tanıyın</div>
+    <div class="y9hse-right">
+      <div class="y9hse-right-body">
+        <div class="y9hse-right-body-name">All Car Filo Gaziantep'i Tanıyın</div>
 
-        <div class="nyda5-right-body-spot">2005 yılında sektöre adım atan Mustafa Özden tarafından kurulan All Car Filo, Gaziantep'te güvenilir ve kaliteli oto kiralama hizmeti sunmayı ilke edinmiş köklü bir kuruluştur. Kuruluşumuzdan bu yana dürüstlük, müşteri memnuniyeti ve profesyonellik ilkelerine bağlı kalarak, her müşterimize en iyi hizmeti sunma gayretindeyiz.</div>
+        <div class="y9hse-right-body-spot">2005 yılında sektöre adım atan Mustafa Özden tarafından kurulan All Car Filo, Gaziantep'te güvenilir ve kaliteli oto kiralama hizmeti sunmayı ilke edinmiş köklü bir kuruluştur. Kuruluşumuzdan bu yana dürüstlük, müşteri memnuniyeti ve profesyonellik ilkelerine bağlı kalarak, her müşterimize en iyi hizmeti sunma gayretindeyiz.</div>
 
-        <div class="nyda5-right-body-chile">
-          <div class="nyda5-right-body-chile-row">
-            <div class="nyda5-right-body-chile-row-name">Vizyonumuz</div>
-            <div class="nyda5-right-body-chile-row-spot">Sektörden tecrübeyle, lüksdan özgün fiyatlı ekonomiden araçlara esneklik ve rahatlama sağlıyoruz. İster günlük, ister aylik araç kiralamaya, her türlü seyahat ihtiyacınızı filomuzda karşılıyoruz.</div>
+        <div class="y9hse-right-body-chile">
+          <div class="y9hse-right-body-chile-row">
+            <div class="y9hse-right-body-chile-row-name">Vizyonumuz</div>
+            <div class="y9hse-right-body-chile-row-spot">Sektörden tecrübeyle, lüksdan özgün fiyatlı ekonomiden araçlara esneklik ve rahatlama sağlıyoruz. İster günlük, ister aylik araç kiralamaya, her türlü seyahat ihtiyacınızı filomuzda karşılıyoruz.</div>
           </div>
 
-          <div class="nyda5-right-body-chile-row">
-            <div class="nyda5-right-body-chile-row-name">Misyonumuz</div>
-            <div class="nyda5-right-body-chile-row-spot">Havalimanı, şehir içi, işe gitmek üzere ve özel etkinliklere kadar her türlü ulaşım ihtiyacınızda All Car Filo yanınızda. Dürüstlükten ödün vermeyen çalışma prensiplerimizle sektördeki lider konumumuzu koruyoruz.</div>
+          <div class="y9hse-right-body-chile-row">
+            <div class="y9hse-right-body-chile-row-name">Misyonumuz</div>
+            <div class="y9hse-right-body-chile-row-spot">Havalimanı, şehir içi, işe gitmek üzere ve özel etkinliklere kadar her türlü ulaşım ihtiyacınızda All Car Filo yanınızda. Dürüstlükten ödün vermeyen çalışma prensiplerimizle sektördeki lider konumumuzu koruyoruz.</div>
           </div>
         </div>
       </div>
@@ -1697,7 +1819,7 @@
 </div>
 
 <style>
-  .nyda5-out {
+  .y9hse-out {
     background-color: #000;
     width: 100%;
     display: flex;
@@ -1708,14 +1830,14 @@
     float: left;
   }
 
-  .nyda5-right-body-chile {
+  .y9hse-right-body-chile {
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin-top: 15px;
   }
 
-  .nyda5-right-body-chile-row {
+  .y9hse-right-body-chile-row {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -1725,16 +1847,16 @@
     padding-left: 10px;
   }
 
-  .nyda5-right-body-chile-row-name {
+  .y9hse-right-body-chile-row-name {
     font-size: 22px;
     font-weight: 500;
   }
 
-  .nyda5-right-body-chile-row-spot {
+  .y9hse-right-body-chile-row-spot {
     font-size: 18px;
   }
 
-  .nyda5-right-body {
+  .y9hse-right-body {
     width: 100%;
     margin-left: 200px;
     display: flex;
@@ -1743,16 +1865,16 @@
     padding: 10px;
   }
 
-  .nyda5-right-body-name {
+  .y9hse-right-body-name {
     font-size: 28px;
     font-weight: 500;
   }
 
-  .nyda5-right-body-spot {
+  .y9hse-right-body-spot {
     font-size: 18px;
   }
 
-  .nyda5 {
+  .y9hse {
     width: var(--max);
     display: flex;
     flex-direction: row;
@@ -1760,20 +1882,20 @@
     float: left;
   }
 
-  .nyda5-right {
+  .y9hse-right {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .nyda5-left {
+  .y9hse-left {
     background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: right;
   }
 
-  .nyda5-left-img {
+  .y9hse-left-img {
     aspect-ratio: 1/1;
     border-radius: 100%;
     width: 300px;
@@ -1784,7 +1906,7 @@
   }
 
   @media screen and (max-width: 1024px) {
-    .nyda5 {
+    .y9hse {
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -1793,41 +1915,41 @@
       padding: 15px 0px 15px 0px;
     }
 
-    .nyda5-left-img {
+    .y9hse-left-img {
       width: calc(var(--max) / 2);
       max-width: 200px;
       margin-right: 0px;
       float: left;
     }
 
-    .nyda5-right-body {
+    .y9hse-right-body {
       margin-left: 0;
       padding: 10px;
     }
 
-    .nyda5-left {
+    .y9hse-left {
       justify-content: center;
       background-color: #000;
     }
   }
 
   @media screen and (min-width: 1024px) {
-    .nyda5 {
+    .y9hse {
       width: var(--max);
       display: flex;
       flex-direction: row;
       min-height: 400px;
     }
 
-    .nyda5-right-body-chile-row {
+    .y9hse-right-body-chile-row {
       flex: 1;
     }
 
-    .nyda5-right {
+    .y9hse-right {
       flex: 5;
     }
 
-    .nyda5-left {
+    .y9hse-left {
       flex: 1;
     }
   }
