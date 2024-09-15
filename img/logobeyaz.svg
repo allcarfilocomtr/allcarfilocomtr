@@ -5,12 +5,10 @@
       .cls-1 {
         fill: #fff;
       }
-
-      .cls-2 {
+     .cls-2 {
         fill: #f17f01;
       }
-
-      .cls-3 {
+     .cls-3 {
         fill: #f17e00;
       }
     </style>
